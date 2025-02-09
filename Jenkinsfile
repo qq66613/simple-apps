@@ -43,7 +43,7 @@ pipeline {
         }
         stage('Publish Images') {
             steps {
-                echo 'Publish Images'
+                echo 'Publish docker compose push'
             }
         }
     }
