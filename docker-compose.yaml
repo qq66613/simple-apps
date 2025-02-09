@@ -4,4 +4,4 @@ services:
     image: kiki23230704/simple-apps-images
     container_name: ct-simple-apps
     ports:
-      - "3000:3000"
+      - "5000:3000"
