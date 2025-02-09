@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Builds Images') {
             steps {
-                echo 'Builds Images'
+                sh 'docker compose build'
             }
         }
         stage('Deploy Images') {
