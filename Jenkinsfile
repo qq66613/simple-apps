@@ -13,6 +13,12 @@ pipeline {
                 sh 'npm install' //for Builds Apps For Reposi
             }
         }
+        //Proses Copy Env
+        stage('Copy env') {
+            steps {
+                sh 'cp -p /home/ubuntu/hari-1/simple-apps/.env .' // Copy Env
+            }
+        }
         //Proses Test Apps
         stage('Testing Apps') {
             steps {
