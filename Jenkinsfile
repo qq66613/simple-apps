@@ -28,7 +28,7 @@ pipeline {
         //Proses scaning apps
         stage('Scanning Apps') {
             steps {
-                echo 'Scanning Apps'
+                sh 'sonar-scanner   -Dsonar.projectKey=simple-apps   -Dsonar.sources=.   -Dsonar.host.url=http://172.23.5.20:9000   -Dsonar.login=sqp_32f12c06ea2d0f55536904722409d6d6a3f979ac'
             }
         }
         stage('Builds Images') {
