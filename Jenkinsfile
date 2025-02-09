@@ -16,7 +16,7 @@ pipeline {
         //Proses Test Apps
         stage('Testing Apps') {
             steps {
-                echo 'Testing Apps'
+                sh 'npm test' // for test
             }
         }
         //Proses scaning apps
