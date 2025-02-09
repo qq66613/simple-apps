@@ -10,7 +10,7 @@ pipeline {
         //Proses Build apps dari repo
         stage('Build Apps') {
             steps {
-                echo 'Build Apps'
+                sh 'npm install' //for Builds Apps For Reposi
             }
         }
         //Proses Test Apps
